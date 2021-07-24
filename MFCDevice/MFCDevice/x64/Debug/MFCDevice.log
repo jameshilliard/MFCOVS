@@ -1,0 +1,19 @@
+﻿  pch.cpp
+  DeviceControl.cpp
+E:\workspace\NoveBeam\MFCDevice\MFCDevice\DeviceCommon\DeviceControl.cpp(718,31): warning C4267: “初始化”: 从“size_t”转换到“LONG”，可能丢失数据
+E:\workspace\NoveBeam\MFCDevice\MFCDevice\DeviceCommon\DeviceControl.cpp(736,24): warning C4244: “=”: 从“unsigned long”转换到“BYTE”，可能丢失数据
+E:\workspace\NoveBeam\MFCDevice\MFCDevice\DeviceCommon\DeviceControl.cpp(742,21): warning C4244: “=”: 从“unsigned long”转换到“BYTE”，可能丢失数据
+  MFCDevice.cpp
+  MFCDeviceDlg.cpp
+E:\workspace\NoveBeam\MFCDevice\MFCDevice\MFCDeviceDlg.cpp(841,22): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+SonixCamera.lib(SonixCamera.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1900”(DeviceControl.obj 中)
+SonixCamera.lib(SonixCamera.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(DeviceControl.obj 中)
+SonixCamera.lib(SonixCamera.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MT_StaticRelease”不匹配值“MTd_StaticDebug”(DeviceControl.obj 中)
+SonixCamera.lib(KSOptDev.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1900”(DeviceControl.obj 中)
+SonixCamera.lib(KSOptDev.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(DeviceControl.obj 中)
+SonixCamera.lib(KSOptDev.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MT_StaticRelease”不匹配值“MTd_StaticDebug”(DeviceControl.obj 中)
+SonixCamera.lib(SFDate.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1900”(DeviceControl.obj 中)
+SonixCamera.lib(SFDate.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(DeviceControl.obj 中)
+SonixCamera.lib(SFDate.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MT_StaticRelease”不匹配值“MTd_StaticDebug”(DeviceControl.obj 中)
+LINK : fatal error LNK1104: 无法打开文件“python38_d.lib”
