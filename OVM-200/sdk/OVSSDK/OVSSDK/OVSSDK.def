@@ -1,0 +1,39 @@
+LIBRARY "OVSSDK"
+
+EXPORTS
+; Device APIs
+OVS_InitSDK							    @001
+OVS_Set_Exposure						@002
+OVS_Get_Exposure						@003
+OVS_Set_LEDCurrent						@004
+OVS_Get_LEDCurrent						@005
+OVS_Set_BLOpen							@006
+OVS_Get_BL								@007
+OVS_Set_Gain							@008
+OVS_Get_Gain							@009
+OVS_Set_CompressionRatio				@010
+OVS_Get_CompressionRatio				@011
+OVS_Get_Distance						@012
+OVS_UninitSDK							@014
+
+
+; Capture APIs
+OVS_StartFeatureForEnroll				@100
+OVS_StartFeatureForMatch			    @101
+OVS_GetPreviewImage			        	@102
+OVS_GetPreviewImageForEnroll            @103
+OVS_GetEnrollFeature				    @104
+OVS_GetMatchFeature					    @105
+OVS_MatchVerify                         @106
+OVS_MatchIdentify						@107
+OVS_AbortCapture						@108
+
+; Enroll APIs
+OVS_UserCount							@201
+OVS_AddUser								@202
+OVS_UpdateUser							@203
+OVS_DeleteUser							@204
+OVS_DeleteAllUsers						@205
+
+; Misc. APIs
+;OVS_GetErrorString						@301

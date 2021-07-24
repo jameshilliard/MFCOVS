@@ -1,0 +1,22 @@
+;LIBRARY	"OVS_SDK"
+
+EXPORTS
+; Match APIs
+
+UninitMatchSDK		@1			
+
+MatchVerifyByID		@2		
+
+MatchVerify			@3
+
+MatchIdentify		@4
+
+UserCount			@5
+
+AddUser				@6
+
+UpdateUser			@7
+
+DeleteUser			@8
+
+DeleteAllUsers		@9		

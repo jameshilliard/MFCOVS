@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\feature-src\algorithmhandler.cpp" />
+    <ClCompile Include="..\..\src\feature-src\devhandler.cpp" />
+    <ClCompile Include="..\..\src\feature-src\global.cpp" />
+    <ClCompile Include="..\..\src\feature-src\ovm_200_feature.cpp" />
+    <ClCompile Include="..\..\src\feature-src\ovm_200_feature_dev.cpp" />
+    <ClCompile Include="..\..\src\feature-src\threadhandler.cpp" />
+    <ClCompile Include="..\..\src\logger\easylogging++.cc" />
+    <ClCompile Include="..\..\src\logger\logger.cpp" />
+    <ClCompile Include="..\..\src\algorithm\src\palm_vein.cpp" />
+    <ClCompile Include="..\..\src\algorithm\src\palmveinparser_impl.cpp" />
+    <ClCompile Include="..\..\src\algorithm\src\utils.cpp" />
+    <ClCompile Include="..\..\src\feature-src\device-windows\OVSDevice.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4E42F357-D644-34FC-BDA4-EAB24C3F9E19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ovm_200_feature.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

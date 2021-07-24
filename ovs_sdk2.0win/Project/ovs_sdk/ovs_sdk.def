@@ -1,0 +1,29 @@
+;LIBRARY "ovs_sdk"
+
+EXPORTS
+; Device APIs
+OVS_InitSDK								@001
+OVS_UninitSDK							@002
+
+; Capture APIs
+OVS_AbortCapture						@100
+OVS_RegisterEnrollCallback				@101
+OVS_RegisterMatchCallback				@102
+OVS_GetFeatureForEnroll					@105
+OVS_GetFeatureForMatch					@106
+
+; Enroll APIs
+OVS_UserCount							@201
+OVS_AddUser								@202
+OVS_UpdateUser							@203
+OVS_DeleteUser							@204
+OVS_DeleteAllUsers						@205
+
+; Match APIs
+OVS_MatchVerify							@301
+OVS_MatchIdentify						@302
+
+; Misc. APIs
+OVS_SaveBitmap							@401
+OVS_GetErrorString						@402
+OVS_GetStatusString						@403

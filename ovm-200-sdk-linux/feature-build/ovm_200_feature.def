@@ -1,0 +1,16 @@
+;LIBRARY	"OVS_SDK"
+
+EXPORTS
+; Feature APIs
+
+InitFeatureSDK               @1
+
+UninitFeatureSDK             @2
+
+StartEnrollMode              @3
+
+StartMatchMode				 @4
+
+GetPreviewImage				 @5
+
+AbortCapture				 @6

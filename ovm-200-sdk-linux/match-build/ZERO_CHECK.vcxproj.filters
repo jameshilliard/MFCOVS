@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\match-build\CMakeFiles\c744cb3f20f99f54bfc64fbd4b70d89e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{86BC44B1-A08D-3F7C-AB3B-FC2337D32126}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

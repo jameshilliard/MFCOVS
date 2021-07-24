@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\OVSDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\algorithmhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\devhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\ovm_200_feature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\ovm_200_feature_dev.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\threadhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\logger\easylogging++.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\logger\logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\algorithm\src\palm_vein.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\algorithm\src\palmveinparser_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\algorithm\src\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{13D5E3EF-C5AE-3C25-B11B-3C377070FEE7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ovm_200_feature.def" />
+  </ItemGroup>
+</Project>

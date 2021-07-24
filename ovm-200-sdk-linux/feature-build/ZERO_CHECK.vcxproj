@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{731254F2-A7C3-3E9E-A382-ED7A01179C61}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\009f5471da36011727d81d86a7952ef9\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\ProgremFiles\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src -BD:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build/ovm_200_feature.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeSystem.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\CMakeLists.txt;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\ProgremFiles\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src -BD:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build/ovm_200_feature.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeSystem.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\CMakeLists.txt;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\ProgremFiles\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src -BD:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build/ovm_200_feature.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeSystem.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\CMakeLists.txt;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\ProgremFiles\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src -BD:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build/ovm_200_feature.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeSystem.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\CMakeLists.txt;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

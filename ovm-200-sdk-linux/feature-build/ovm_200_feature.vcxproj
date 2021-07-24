@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A1398CDE-D04F-3D85-834A-2777F59183B0}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ovm_200_feature</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\lib-win\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ovm_200_feature.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ovm_200_feature</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\lib-win\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ovm_200_feature.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ovm_200_feature</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\lib-win\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ovm_200_feature.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ovm_200_feature</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\lib-win\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ovm_200_feature.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ovm_200_feature</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\src\feature-src\..\algorithm\include;..\src\feature-src\..\opencv-windows\opencv3410\include;..\src\feature-src\..\opencv-windows\opencv3410\include\opencv;..\src\feature-src\..\opencv-windows\opencv3410\include\opencv2;..\src\feature-src\..\sonixcamera-windows\SonixCamera;..\src\feature-src\..\logger;..\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";ovm_200_feature_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";ovm_200_feature_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opencv_world3410d.lib;SonixCamera.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\src\sonixcamera-windows\lib\x64;..\src\opencv-windows\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Gitlab/ovm-200-sdk-x64_vs2019/lib-win/Debug/ovm_200_feature.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Gitlab/ovm-200-sdk-x64_vs2019/lib-win/Debug/ovm_200_feature.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <ModuleDefinitionFile>ovm_200_feature.def</ModuleDefinitionFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\src\feature-src\..\algorithm\include;..\src\feature-src\..\opencv-windows\opencv3410\include;..\src\feature-src\..\opencv-windows\opencv3410\include\opencv;..\src\feature-src\..\opencv-windows\opencv3410\include\opencv2;..\src\feature-src\..\sonixcamera-windows\SonixCamera;..\src\feature-src\..\logger;..\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_i386__;WIN32;_WINDOWS;NDEBUG;_USRDLL;ovm_200_feature_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <EnableModules>false</EnableModules>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <OpenMPSupport>false</OpenMPSupport>
+      <BrowseInformationFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";ovm_200_feature_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opencv_world3410.lib;SonixCamera.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\src\sonixcamera-windows\lib\x64;..\src\opencv-windows\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Gitlab/ovm-200-sdk-x64_vs2019/lib-win/Release/ovm_200_feature.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Gitlab/ovm-200-sdk-x64_vs2019/lib-win/Release/ovm_200_feature.pdb</ProgramDataBaseFile>
+      <SubSystem>NotSet</SubSystem>
+      <ModuleDefinitionFile>ovm_200_feature.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <FunctionOrder>
+      </FunctionOrder>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AssemblyDebug>false</AssemblyDebug>
+      <HeapReserveSize>0</HeapReserveSize>
+      <HeapCommitSize>0</HeapCommitSize>
+      <StackReserveSize>0</StackReserveSize>
+      <StackCommitSize>0</StackCommitSize>
+      <LargeAddressAware>
+      </LargeAddressAware>
+      <TerminalServerAware>
+      </TerminalServerAware>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";ovm_200_feature_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";ovm_200_feature_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Gitlab/ovm-200-sdk-x64_vs2019/lib-win/MinSizeRel/ovm_200_feature.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Gitlab/ovm-200-sdk-x64_vs2019/lib-win/MinSizeRel/ovm_200_feature.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";ovm_200_feature_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";ovm_200_feature_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\algorithm\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\opencv-windows\opencv320\include\opencv2;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\sonixcamera-windows\SonixCamera;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\..\logger;D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Gitlab/ovm-200-sdk-x64_vs2019/lib-win/RelWithDebInfo/ovm_200_feature.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Gitlab/ovm-200-sdk-x64_vs2019/lib-win/RelWithDebInfo/ovm_200_feature.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\ProgremFiles\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src -BD:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build --check-stamp-file D:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\ProgremFiles\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src -BD:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build --check-stamp-file D:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\ProgremFiles\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src -BD:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build --check-stamp-file D:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\ProgremFiles\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Gitlab/ovm-200-sdk-x64_vs2019/src/feature-src -BD:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build --check-stamp-file D:/Gitlab/ovm-200-sdk-x64_vs2019/feature-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\3.17.1\CMakeSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;E:\ProgremFiles\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\OVSDevice.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\algorithmhandler.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\devhandler.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\global.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\ovm_200_feature.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\ovm_200_feature_dev.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\feature-src\threadhandler.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\logger\easylogging++.cc" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\logger\logger.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\algorithm\src\palm_vein.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\algorithm\src\palmveinparser_impl.cpp" />
+    <ClCompile Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\src\algorithm\src\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Gitlab\ovm-200-sdk-x64_vs2019\feature-build\ZERO_CHECK.vcxproj">
+      <Project>{731254F2-A7C3-3E9E-A382-ED7A01179C61}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ovm_200_feature.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
